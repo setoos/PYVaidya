@@ -3,6 +3,8 @@ import annotationLinkEmail from './annotations/linkEmail'
 import annotationLinkExternal from './annotations/linkExternal'
 import annotationLinkInternal from './annotations/linkInternal'
 import annotationProduct from './annotations/product'
+import collectionsTypes from './collections/collections'
+import customer from './customer/customer'
 
 const annotations = [
   annotationLinkEmail,
@@ -130,6 +132,8 @@ const objects = [
   shopifyProductVariant,
   collectionGroup,
   collectionLinks,
+  collectionsTypes,
+  customer,
 ]
 
 export const schemaTypes = [...annotations, ...singletons, ...objects, ...blocks, ...documents]
